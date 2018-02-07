@@ -1,0 +1,4 @@
+
+setInletVelocity.C
+
+LIB = $(FOAM_LIBBIN)/libsetInletVelocity
