@@ -144,6 +144,7 @@ void consistentIcoFluid::evolve()
     Info << "Evolving fluid solver: " << this->type() << endl;
 
     const fvMesh& mesh = fluidSolver::mesh();
+    mesh.schemesDict().setFluxRequired(p().name());
 
     updateSf();
 

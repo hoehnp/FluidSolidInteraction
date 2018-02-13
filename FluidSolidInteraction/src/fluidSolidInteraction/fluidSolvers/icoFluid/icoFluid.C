@@ -240,6 +240,7 @@ void icoFluid::evolve()
     Info << "Evolving fluid solver: " << this->type() << endl;
 
     const fvMesh& mesh = fluidSolver::mesh();
+    mesh.schemesDict().setFluxRequired(p().name());
 
     int nCorr(readInt(fluidProperties().lookup("nCorrectors")));
 
