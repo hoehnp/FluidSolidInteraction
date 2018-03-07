@@ -14,15 +14,15 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-numberOfSubdomains 4;
+numberOfSubdomains 2;
 
 method          simple;
 
-globalFaceZones ( plate-zone );
+globalFaceZones ( plateZone );
 
 simpleCoeffs
 {
-    n               (4 1 1);
+    n               (2 1 1);
     delta           0.001;
 }
 

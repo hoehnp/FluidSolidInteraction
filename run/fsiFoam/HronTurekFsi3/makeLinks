@@ -16,12 +16,12 @@ ln -s ../../$2/0 solid
 
 cd ..
 
-
-foreach proc(processor*)
-cd $proc
-cd 0
-ln -s ../../../$2/$proc/0 solid
-cd ../constant
-ln -s ../../../$2/$proc/constant solid
-cd ../..
-end
+for  proc in processor*
+do
+	cd $proc
+	cd 0
+	ln -s ../../../$2/$proc/0 solid
+	cd ../constant
+	ln -s ../../../$2/$proc/constant solid
+	cd ../..
+done
