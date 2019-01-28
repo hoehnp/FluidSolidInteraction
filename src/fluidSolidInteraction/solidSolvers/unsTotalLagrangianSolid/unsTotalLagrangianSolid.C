@@ -1594,7 +1594,7 @@ bool unsTotalLagrangianSolid::writeObject
 ) const
 {
     // Switch moveMesh(solidProperties().lookup("moveMesh"));
-    Switch moveMesh(false);
+    Switch moveMesh(true);
 
     nonLinearGeometry::nonLinearType nonLinear =
         nonLinearGeometry::nonLinearNames_.read
